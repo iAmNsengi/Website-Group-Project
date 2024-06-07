@@ -49,7 +49,7 @@ function navBar() {
                 listContainer.style.zIndex = 9
                 listContainer.appendChild(listItem);
         });
-        listContainer.lastElementChild.firstElementChild.href= `/contact.html`
+        listContainer.lastElementChild.firstElementChild.href = `/contact.html`
         listContainer.innerHTML += `<svg
         width="1512"
         height="1028"
@@ -114,13 +114,6 @@ function navBar() {
                 })
         })
 }
-
-
-
-
-
-
-
 
 function service() {
         const data = [
@@ -191,8 +184,8 @@ function referencesRendering() {
 function contactRender() {
         const container = document.querySelector(".contacts");
         let hamburger = document.querySelectorAll(".togglBtn>svg>path")
-        hamburger.forEach(el =>{
-                el.getAttribute('fill') == 'black' ? el.setAttribute('fill','green') : el
+        hamburger.forEach(el => {
+                el.getAttribute('fill') == 'black' ? el.setAttribute('fill', 'green') : el
         }
         )
 
