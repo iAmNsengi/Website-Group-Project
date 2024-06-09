@@ -153,11 +153,19 @@ function referencesRendering() {
         refs.appendChild(fragmentRef);
 }
 
+function privacy(){
+        let hamburger = document.querySelectorAll(".togglBtn>svg>path")
+        hamburger.forEach(el => {
+                el.getAttribute('fill') == 'black' ? el.setAttribute('fill', '#00672E') : el
+        }
+        )
+}
+
 function contactRender() {
         const container = document.querySelector(".contacts");
         let hamburger = document.querySelectorAll(".togglBtn>svg>path")
         hamburger.forEach(el => {
-                el.getAttribute('fill') == 'black' ? el.setAttribute('fill', 'green') : el
+                el.getAttribute('fill') == 'black' ? el.setAttribute('fill', '#00672E') : el
         }
         )
 
